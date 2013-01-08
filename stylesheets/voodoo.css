@@ -104,14 +104,15 @@ section {
 	padding: 20px;
 }
 @-webkit-keyframes ghost {
-	from { -webkit-transform: translate(0px,10px); }
-	70% { -webkit-transform: translate(0px,-10px); }
-	to { -webkit-transform: translate(0px,10px); }
+	from { -webkit-transform: translate(-5px,10px); }
+	30% { -webkit-transform: translate(-5px,-10px); }
+	50% { -webkit-transform: translate(5px,10px); }
+	70% { -webkit-transform: translate(5px,-10px); }
+	to { -webkit-transform: translate(-5px,10px); }
 }
 @-webkit-keyframes zoom {
 	from { -webkit-transform: translate(10px,0px); }
-	70% { -webkit-transform: translate(-20px,10px); }
-	to { -webkit-transform: translate(10px,0px); }
+	to { -webkit-transform: translate(-1500px,0px) scale(10); }
 }
 .marie {
 	position:absolute;
@@ -119,9 +120,10 @@ section {
 	top: 200px;
 	
 	-webkit-transform-origin:0% 60%;
-	-webkit-animation: ghost 3.9s ease-in-out infinite alternate;
+	-webkit-animation: ghost 6s ease-in-out infinite alternate;
 	-webkit-transition: all 2s ease-in-out;
 }
 .marie:hover {
 	opacity: 0;
+	-webkit-animation: zoom 6s cubic-bezier(0.250, 0.250, 0.750, 0.750);
 }
