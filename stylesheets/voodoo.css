@@ -1,0 +1,119 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* #Theme
+================================================== */
+h1 {
+	text-transform: uppercase;
+	color: #100A00;
+}
+h2 {
+	color: #F0E9D0;
+	font-size: 20px;
+}
+h3 {
+	text-transform: uppercase;
+	color: #100A00;
+}
+h4 {
+	color: #594524;
+	margin-bottom: 20px;
+}
+header {
+	background-color: #180D00;
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+nav {
+	padding: 10px;
+	line-height: 70px;
+}
+nav ul {
+	margin: 0;
+}
+nav li {
+	display: inline;
+	margin: 0 10px;
+}
+nav a {
+	color: #C9BDA5;
+	text-decoration: none;
+	font-size: 20px;
+	-webkit-transition: all 1s ease-in-out;
+}
+nav a:hover {
+	color: #D9A300;
+}
+.logo {
+	float: left;
+	margin: 10px;
+}
+section {
+	text-align: center;
+	padding: 40px 0;
+}
+.banner {
+	background-image: url('../images/banner.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 612px;
+	position: relative;
+}
+.contribute {
+	background-image: url('../images/contribute.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 612px;
+	position: relative;
+	color: #FFF;
+}
+.contribute h3,
+.contribute h4 {
+	color: #FFF;
+}
+.contribution {
+	text-align: left;
+	background-color: rgba(54,40,15,0.7);
+}
+.btn {
+	display: inline-block;
+	background-color: #D9A300;
+	color: #180C00;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 16px;
+	border-radius: 20px;
+}
+.btn:hover {
+	text-decoration: none;
+}
+.feature {
+	background-color: #36280F;
+	display: block;
+	padding: 20px;
+}
+@-webkit-keyframes ghost {
+  from { -webkit-transform: translate(0px,10px); }
+  70% { -webkit-transform: translate(0px,-10px); }
+  to { -webkit-transform: translate(0px,10px); }
+}
+
+.marie {
+  position:absolute;
+  left: 35%;
+  top: 200px;
+ 
+  -webkit-transform-origin:0% 60%;
+  -webkit-animation: ghost 3.9s ease-in-out infinite alternate;
+}
