@@ -104,16 +104,24 @@ section {
 	padding: 20px;
 }
 @-webkit-keyframes ghost {
-  from { -webkit-transform: translate(0px,10px); }
-  70% { -webkit-transform: translate(0px,-10px); }
-  to { -webkit-transform: translate(0px,10px); }
+	from { -webkit-transform: translate(0px,10px); }
+	70% { -webkit-transform: translate(0px,-10px); }
+	to { -webkit-transform: translate(0px,10px); }
 }
-
+@-webkit-keyframes zoom {
+	from { -webkit-transform: translate(10px,0px); }
+	70% { -webkit-transform: translate(-20px,10px); }
+	to { -webkit-transform: translate(10px,0px); }
+}
 .marie {
-  position:absolute;
-  left: 35%;
-  top: 200px;
- 
-  -webkit-transform-origin:0% 60%;
-  -webkit-animation: ghost 3.9s ease-in-out infinite alternate;
+	position:absolute;
+	left: 35%;
+	top: 200px;
+	
+	-webkit-transform-origin:0% 60%;
+	-webkit-animation: ghost 3.9s ease-in-out infinite alternate;
+	-webkit-transition: all 2s ease-in-out;
+}
+.marie:hover {
+	opacity: 0;
 }
