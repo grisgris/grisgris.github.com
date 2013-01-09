@@ -12,6 +12,7 @@
 h1 {
 	text-transform: uppercase;
 	color: #100A00;
+	letter-spacing: -1px;
 }
 h2 {
 	color: #F0E9D0;
@@ -24,6 +25,13 @@ h3 {
 h4 {
 	color: #594524;
 	margin-bottom: 20px;
+}
+h5 {
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+p {
+	margin-bottom: 10px;
 }
 header {
 	background-color: #180D00;
@@ -58,8 +66,9 @@ nav a:hover {
 	float: left;
 	margin: 10px;
 }
-section {
+section, footer {
 	text-align: center;
+	position: relative;
 	padding: 40px 0;
 }
 .banner {
@@ -67,14 +76,14 @@ section {
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	height: 612px;
-	position: relative;
+	border-bottom: 2px solid #000;
+	border-top: 2px solid #170D00;
 }
 .contribute {
 	background-image: url('../images/contribute.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	height: 612px;
-	position: relative;
 	color: #FFF;
 }
 .contribute h3,
@@ -84,6 +93,48 @@ section {
 .contribution {
 	text-align: left;
 	background-color: rgba(54,40,15,0.7);
+	padding: 20px;
+	height: 360px;
+}
+.paper {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background-image: url('../images/license.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	width: 668px;
+	height: 638px;
+	padding: 40px;
+	margin: 10px auto;
+	color: #594524;
+	text-align: left;
+}
+.faq {
+	background-image: url('../images/faq.jpg');
+	color: #FFF;
+	box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.4);
+}
+.faq h3 {
+	color: #FFF;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+.faq .inner {
+	text-align: left;
+	margin: 30px;
+	padding: 30px;
+	background-color: #FFF;
+	border: 1px solid #0D0A09;
+	border-radius: 10px;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+}
+.faq h5 {
+	color: #0C0C0A;
+	font-size: 24px;
+	font-weight: 200;
+	letter-spacing: -1px;
+}
+.faq p {
+	color: #5D5245;
+	font-size: 16px;
 }
 .btn {
 	display: inline-block;
@@ -126,6 +177,14 @@ section {
 .marie:hover {
 	opacity: 0;
 	-webkit-animation: zoom 6s cubic-bezier(0.250, 0.250, 0.750, 0.750);
+}
+footer {
+	background-color: #231A08;
+	color: #796B52;
+}
+footer h3 {
+	font-size: 36px;
+	color: #FFF;
 }
 
 /* #Media Queries
@@ -193,6 +252,21 @@ section {
 	}
 	.contribute {
 		background-size: auto 100%;
-		height: 400px;
+		height: auto;
+	}
+	.contribution {
+		height: auto;
+	}
+	.paper {
+		height: auto;
+		width: auto;
+		background: transparent;
+	}
+	.faq h5 {
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.faq .inner {
+		margin: 10px 5px;
 	}
 }
